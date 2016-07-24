@@ -1,5 +1,5 @@
 # pixi-h5
-主要处理pixi游戏，用ES6开发
+快速搭建全屏swiper
 * **es6**
 * **swiper**
 * **less**
