@@ -1,0 +1,199 @@
+@import "preset.less";
+@import "loading.less";
+
+
+#all{
+  width: 100%;
+  height: 100%;
+}
+
+
+.swiper-container,.swiper-wrapper,.swiper-slider {
+	width:100%;
+	height:100%;
+}
+body {
+	font-size:"microsoft yahei";
+}
+ 
+/*普通版背景*/
+.pages{ background:url(http://sports.sohu.com/upload/ruitiyu2016/images/ordinary_bg.jpg) no-repeat; background-size:cover;}
+/*欢乐版背景
+.pages{ background:url(http://sports.sohu.com/upload/ruitiyu2016/images/happy_bg.jpg) no-repeat; background-size:cover;}*/
+/*悲伤版背景
+.pages{ background:url(http://sports.sohu.com/upload/ruitiyu2016/images/sad_bg.jpg) no-repeat; background-size:cover;}*/
+
+
+/*第一屏*/
+.pagefirst img{
+	position:absolute;
+	width:100%;
+}
+.pagefirst .bgImg{
+	left:0px;
+	top:0px;
+	height:100%;
+}
+.pagefirst .logo {
+	z-index:5;
+	height:auto;
+}
+.pagefirst .move {
+	height:auto;
+	top:75.8%;
+	right:3%;
+}
+.cont01{
+	/*top:15%;*/
+}
+.cont02{
+	/*top:15%;*/
+}
+
+/*内容屏*/
+.pages{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.pages h2{
+	height:50px;
+	line-height:50px;
+	color:#deba5b;
+	text-align:center;
+	font-family:"microsoft yahei";
+	font-size:20px;
+}
+.pages .img1{
+	width:100%;
+	height:auto;
+}
+.pages .text_cover{
+	height:90%;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.pages .cover-1{
+	width:100%;
+	padding:0 5%;
+	font:normal 24em/2em "microsoft yahei";
+	color:#fff;
+}
+.pages .cover-1 p{
+	text-indent:2em;
+}
+
+/*最后一屏*/
+.pagelast .reviews{
+	position:absolute;
+	top:15%;
+	width:100%;
+	height:7%;
+}
+.pagelast .share{
+	position:absolute;
+	top:25%;
+	width:100%;
+	height:7%;
+}
+.swiper-slide-active .code2v{
+	position:absolute;
+	top:35%;
+	width:29%;
+	margin:0 34%;
+	transform:scale(0);
+	-webkit-transform:scale(0);
+	-moz-transform:scale(0);
+	animation:cont1 1s ease-out 1.2s forwards;
+	-webkit-animation:cont1 1s ease-out 1.2s forwards;
+	-moz-animation:cont1 1s ease-out 1.2s forwards;
+}
+.pagelast #mark{
+	position:absolute;
+	display:none;
+	z-index:100;
+}
+/*最后一屏ad广告*/
+.pagelast .adBox{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	text-align:center;
+	background:#4e1615 url(http://sports.sohu.com/upload/ruitiyu2016/images/ad_bg.jpg) no-repeat;
+	background-size:contain;
+	padding-bottom:10px;
+}
+.pagelast .adBox a{
+	color:#fff;
+	text-decoration:none	
+}
+.pagelast .adText{
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+	font-family:"microsoft yahei"
+}
+.pagelast .adImg{
+	width:95%;/*广告图片尺寸*/
+}
+.pagelast .adBox{
+	/* display:none; 无广告*/
+}
+
+/*左右按钮*/
+.swiper-button-prev,.swiper-button-next{
+	position:absolute;
+	width:10%;
+	height:8%;
+	top:90%;
+	color:#767b81;
+	background-image:none;
+}
+.swiper-button-prev {
+	left:10px;
+}
+.swiper-button-next {
+	right:10px;
+}
+.swiper-button-prev img,.swiper-button-next img {
+	width:100%;
+}
+
+/*音乐图标*/
+.musicBtn .onImg {
+	display:none;
+}
+
+/*从小到大的动画*/
+.swiper-slide-active .scale {
+	animation:cont1 1s ease-out .5s forwards;
+	-webkit-animation:cont1 1s ease-out .5s forwards;
+	-moz-animation:cont1 1s ease-out .5s forwards;
+}
+ @keyframes cont1 {
+	from {transform:scale(0);-webkit-transform:scale(0);-moz-transform:scale(0);}
+	to {transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);}
+ }
+  @-webkit-keyframes cont1 {
+	from {transform:scale(0);-webkit-transform:scale(0);-moz-transform:scale(0);}
+	to {transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);}
+ }
+  @-moz-keyframes cont1 {
+	from {transform:scale(0);-webkit-transform:scale(0);-moz-transform:scale(0);}
+	to {transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);}
+ }
+
+/*滑动提示*/
+#point{
+	position:absolute;
+	right:2px;
+	bottom:2px;
+	width:50px;
+	height:50px;
+	background:url(http://i3.itc.cn/20160129/2cf3_eccdf127_badb_a8df_e4c1_dae811baafc2_1.png);
+	background-size:cover;
+	z-index:99;
+}

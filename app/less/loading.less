@@ -1,0 +1,40 @@
+@import "preset.less";
+
+.loading{
+  .wrapper();
+  background: rgb(88, 137, 218);
+
+  .loading_player{
+    width: 297px;
+    height: 170px;
+    .abs(124px,356px);
+    .ani_a();
+    background: url(../img/loading.png) no-repeat;
+    animation:loading 1s linear infinite;
+    animation-timing-function: step-start;    
+    animation-fill-mode: forwards;
+    z-index: 9999;
+  }
+
+  @keyframes loading{
+    0%{
+      background-position: 0 0;
+    }
+
+    50%{
+      background-position: -297px 0;
+    }
+
+    100%{
+     background-position: -594px 0;
+    }
+  }
+
+  .progress-num{
+    color: #fff;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 50px;
+    .abs_text(588px);
+  }
+}
