@@ -1,4 +1,4 @@
-# pixi-h5
+# swiper-h5
 快速搭建全屏swiper
 * **es6**
 * **swiper**
