@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="http://sports.sohu.com/upload/ruitiyu2016/css/swiper.3.1.2.min.css">
   
   <link rel="stylesheet" href="http://sports.sohu.com/upload/ruitiyu2016/css/animate.min.css">
-  <script src="http://sports.sohu.com/upload/ruitiyu2016/js/swiper.animate1.0.2.min.js"></script>
   <script src="http://sports.sohu.com/upload/ruitiyu2016/js/jquery-1.10.1.min.js"></script>
   <script src="http://sports.sohu.com/upload/ruitiyu2016/js/swiper.3.1.2.jquery.min.js"></script>
   <title>h5_swiper</title>
@@ -20,24 +19,22 @@
 
 <body ontouchmove="event.preventDefault();" >
 
-  <div class="loading">
+<!--   <div class="loading">
     <div class="pace">
       <div class="pace-progress">
         0
       </div>
     </div>
-  </div>
-
-
-  <!-- loading -->
-<!--   <div class="loading">
-    <div class="loading_player"></div>
-    <div class="progress-num">0%</div>
   </div> -->
+
 
   <div class="all" id="all">
     <div class="swiper-container">
-      <div class="swiper-wrapper">    </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><span>slide1</span></div>
+        <div class="swiper-slide"><span>slide2</span></div>
+        <div class="swiper-slide"><span>slide3</span></div>
+      </div>
     </div>
   </div>
 
@@ -87,9 +84,9 @@
     pas.response();
 
 
-    // var mySwiper = new Swiper('.swiper-container', {
-    //   autoplay: 5000,//可选选项，自动滑动
-    // })
+    var mySwiper = new Swiper('.swiper-container', {
+      autoplay: 5000,//可选选项，自动滑动
+    })
   </script>
 </body>
 

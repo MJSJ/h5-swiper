@@ -1,7 +1,7 @@
 # pixi-h5
 主要处理pixi游戏，用ES6开发
 * **es6**
-* **pixi**
+* **swiper**
 * **less**
 * and so so on
 
